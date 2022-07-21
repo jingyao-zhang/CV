@@ -1,0 +1,140 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\name{Jingyao Zhang} % Your name
+\address{Taibai South Road NO.2 \\ Xi'an, Shaanxi, China 710071} % Your address
+\address{jingyao.zhang.xidian@foxmail.com} % Your phone number and email
+
+\begin{document}
+
+\begin{rSection}{Affiliation}
+
+State Key Laboratory of Integrated Service Networks (ISN)\\
+School of Telecommunications Engineering, Xidian University
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+% {\bf Xidian University}, {Xi'an, Shaanxi, China}\hfill {September 2017 - Present} \\
+% PhD. candidate in Communication \& Information System \\
+
+{\bf Xidian University}, {Xi'an, Shaanxi, China}\hfill {September 2018 - Present} \\
+M.S. in Electronic \& Telecommunications Engineering (GPA: 3.72) \\
+
+{\bf Xidian University}, {Xi'an, Shaanxi, China}\hfill {September 2014 - July 2018} \\
+B.S. in Telecommunications Engineering (GPA: 3.7) \\
+Selected Student in Teaching Reformation Class (Top 5\% of 800+) \\
+Thesis: ``Optical Interconnect Architecture for Emerging Memories” {\bf (outstanding thesis)}\\
+Advisor: Huaxi Gu
+
+
+\end{rSection}
+
+\begin{rSection}{Research Interests}
+\begin{itemize}
+	\item Hardware-software codesign for efficient sparse matrix multiplication.
+	\item Design automation of optimal architecture for neural networks using FPGA.
+	\item Interconnects for distributed computing systems, such as acceleration system for neural networks training.
+\end{itemize}
+\end{rSection}
+
+
+
+\begin{rSection}{Publications}
+
+\begin{rSubsection}{}{}{}{}
+	% \item {\bf Jingyao Zhang}, Huaxi Gu, Kang Wang, "FLATO: A Flexible Compact NxN Topology for Plasmonic Switches," IEEE Transactions on Communications (under revision).
+	\item {\bf Jingyao Zhang}, Huaxi Gu, Grace Li Zhang, Bing Li, Ulf Schlichtmann, ``{\bf Hardware-Software Codesign of Weight Reshaping and Systolic Array Multiplexing for Efficient CNNs}," 2021 Design, Automation \& Test in Europe Conference \& Exhibition (DATE), February 2021 {\bf (acceptance rate: 24\%)}.
+	\item {\bf Jingyao Zhang} and Huaxi Gu, ``LOOP: A Low-Loss Compact Plasmonic Router for ONoC," 2019 18th International Conference on Optical Communications and Networks (ICOCN), Huangshan, China, 2019, pp. 1-3, doi: 10.1109/ICOCN.2019.8933968.
+
+\end{rSubsection}
+
+\end{rSection}
+
+\begin{rSection}{P.R.C. Patent}
+	\begin{rSubsection}{}{}{}{}
+		\item {\bf Jingyao Zhang}, Huaxi Gu, Zhangming Zhu, Yintang Yang, Hui Li, ``An Optical Switch Based on Photonic-Plasmonic Switching Elements," 2018, No.201910618044.3 {\bf (authorized)}.
+		\item Huaxi Gu, {\bf Jingyao Zhang}, Yintang Yang, Kun Wang, Kang Wang, Lei Li, ``A Waveguide Routing Method of Optical Switching Structure for Multicast/Broadcast," 2019, No.201911027714.0 (under review).
+	\end{rSubsection}
+\end{rSection}
+
+
+
+\begin{rSection}{Honours and awards}
+	\begin{rSubsection}{}{}{}{}
+		\item First-class Scholarship, Xidian University (Top 14\% of 560+)\hfill {2018, 2019}
+		\item Outstanding Student Award, Xidian University \hfill {2018, 2019}
+		\item Outstanding Cadre of School of Telecommunications Engineering, Xidian University \hfill {2015, 2016}
+		\item Third-class Scholarship, Xidian University \hfill {2015, 2016}
+
+
+	\end{rSubsection}
+	
+\end{rSection}
+
+\begin{rSection}{Experience}
+	
+	\begin{rSubsection}{Xidian University}{September 2018 - Present}{Researcher}{Xi'an, China}
+	\item Develop Hardware-software codesign framework of weight reshaping and systolic array multiplexing for efficient CNNs.
+	\item Implement inferences of CNNs based on systolic arrays using FPGA.
+	\item Cooperate with two junior students implementing inter-board memory access in parallel using Aurora protocol on three FPGA boards.
+	\item Implement inter-board communication using Arm core, Ethernet protocol and DMA between two FPGA boards.
+	\item Develop a waveguide routing method of optical switching structure for multicast/broadcast.
+	\item Propose a low-loss compact plasmonic router for ONoC.
+    \end{rSubsection}	
+	
+	\begin{rSubsection}{Xilinx Summer Camp}{July 2020 - August 2020}{Student Camper}{Online}
+		\item Develop a distributed platform for acceleration with a teammate (\href{https://github.com/Ssicayoon/XSC_Distributed_Platform_for_Acceleration}{Github}).
+	\end{rSubsection}
+
+	\begin{rSubsection}{Microsoft Innovation Center}{July 2017 - August 2017}{Intern}{Xi'an, China}
+		\item Research on different generations of cellular networks.
+	\end{rSubsection}
+
+\end{rSection}
+
+
+\begin{rSection}{Referees}
+	{\bf My supervisors}: \\
+	Prof. Huaxi Gu \\
+	State Key Laboratory of Integrated Service Networks, Xidian University \\
+	Email: hxgu@xidian.edu.cn
+
+\end{rSection}
+
+\end{document}
