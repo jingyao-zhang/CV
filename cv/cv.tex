@@ -198,6 +198,33 @@
     
   \resumeSubHeadingListEnd
 
+%----------- WORK EXPERIENCE -----------
+
+\section{Work Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Operating System Lab, DAMO Academy}{\textit{Mentor: Yue Qian}}
+      {External Developer}{Aug 2023 \textbf{--} Present}
+        \resumeItemListStart
+            \resumeItem{Currently building a system for large-scale cloud deployment that provides GPU confidential computing.}
+            \resumeItem{Conducted research on the \textit{nvTrust} for Nvidia confidential computing, including verification and attestation.}
+            \resumeItem{Investigated existing systems that support GPU confidential computing, such as \textit{Azure Confidential AI}.}
+        \resumeItemListEnd
+    
+    \resumeSubheading
+      {Open Source Promotion Plan, Chinese Academy of Sciences}{\textit{Mentor: Ding Ma}}
+      {Project Developer}{Jul 2023 \textbf{--} Sep 2023}
+        \resumeItemListStart
+            \resumeItem{Developed a workflow that automatically generates reference measurements for user images, firmware, and kernel on the AMD SEV-SNP platform, compatible with \textit{Confidential Containers}.}
+            \resumeItem{Examined the attestation process on the AMD SEV-SNP platform, including the generation of reference measurement.}
+            \resumeItem{Evaluated attestation tools across various cloud service providers, such as Google Cloud Platform and Azure.}
+        \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
 %----------- Publication -----------
 \section{Publications}
   \vspace{2pt}
@@ -214,6 +241,7 @@
         4. \textbf{Jingyao Zhang}, Huaxi Gu, Li Zhang, Bing Li, and Ulf Schlichtmann. ``Hardware-Software Codesign of Weight Reshaping and Systolic Array Multiplexing for Efficient CNNs." \textit{In Proc. of the 24th Design, Automation and Test in Europe (DATE). February 2021. (acceptance rate: 24\%)} [\href{https://drive.google.com/file/d/1vOt_0eP0xW03lu6KngMNexirfjsxyFDI/view}{paper}] [\href{https://ieeexplore.ieee.org/document/9474215}{doi}] 
     }}
   \resumeSubHeadingListEnd
+
 %----------- RESEARCH EXPERIENCE -----------
 
 \section{Research Experience}
@@ -224,12 +252,15 @@
       {AREA Lab, University of California, Riverside}{\textit{Advisor: Prof. Elaheh Sadredini}}
       {Graduate Research Assistant}{Sep 2021 \textbf{--} Present}
         \resumeItemListStart
-            \resumeItem{Currently designing a secure and efficient mechanism to extend existing trusted execution environment for heterogeneous computing (e.g., GPUs, near-memory accelerators).}
+            \resumeItem{Currently designing an on-chip solution for accelerating quantized language models, including dynamic data precision adaptation and efficient runtime de-/quantization.}
+            \resumeItem{Currently developing a general-purpose compiler optimized for domain-specific accelerators, specifically targeting workloads that involve fine-grained interleaving of vector and scalar kernels as well as mixed-precision workloads.}
+            % \resumeItem{Currently designing a secure and efficient mechanism to extend existing trusted execution environment for heterogeneous computing (e.g., GPUs, near-memory accelerators).}
             \resumeItem{Developed a framework to seamlessly integrate in-SRAM computing into existing computer systems for efficient and secure on-chip processing of pre- and post-quantum cryptography.}
             % \resumeItem{Currently developing a framework to seamlessly integrate in-SRAM computing into existing computer systems for efficient and secure on-chip processing of pre- and post-quantum cryptography.}
             \resumeItem{Developed a bit-parallel modular multiplication algorithm with implicit shifting technology for efficient and secure in-SRAM computing of the NTT, optimizing performance on a low-overhead SRAM array.}
-            \resumeItem{Designed a secure in-SRAM architecture for on-chip acceleration of the SHA-3 algorithm using lane-wise data alignment and in-place read/write strategy, achieving high energy and area efficiency with high throughput.}
-            \resumeItem{Designed a secure in-SRAM architecture for on-chip acceleration of the AES algorithm using row-wise data alignment and SubBytes/ShiftRows stage fusion, achieving high energy and area efficiency.}
+            % \resumeItem{Designed a secure in-SRAM architecture for on-chip acceleration of the SHA-3 algorithm using lane-wise data alignment and in-place read/write strategy, achieving high energy and area efficiency with high throughput.}
+            % \resumeItem{Designed a secure in-SRAM architecture for on-chip acceleration of the AES algorithm using row-wise data alignment and SubBytes/ShiftRows stage fusion, achieving high energy and area efficiency.}
+            \resumeItem{Designed a secure in-SRAM architecture for on-chip acceleration of the AES/SHA-3 algorithm using row/lane-wise data alignment, achieving high energy and area efficiency with high throughput.}
         \resumeItemListEnd
     
     \resumeSubheading
@@ -243,6 +274,8 @@
         \resumeItemListEnd
     
   \resumeSubHeadingListEnd
+
+
 
 \section{Teaching Experience}
   \vspace{3pt}
@@ -278,7 +311,7 @@
       {Xilinx Summer Camp}{Online}
       {Participant \& Team Leader}{Jul 2020 \textbf{--} Aug 2020}
         \resumeItemListStart
-            \resumeItem{Developed an FPGA-based distributed platform for acceleration over Ethernet, with the mother board sending a file to a watched folder on the child board for immediate program execution. [\href{https://github.com/jingyao-zhang/XSC_Distributed_Platform_for_Acceleration}{source}]}
+            \resumeItem{Developed an FPGA-based distributed platform for acceleration over Ethernet, with the mother board sending a file to a watched folder on the child board for immediate program execution. [\href{https://github.com/jingyao-zhang/XSC_Distributed_Platform_for_Acceleration}{code}]}
         \resumeItemListEnd
 
     \resumeSubheading
@@ -290,22 +323,28 @@
     
   \resumeSubHeadingListEnd
 
-\section{Talks \& Presentations}
+\section{Talks}
   \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
-        1. \textbf{Jingyao Zhang}. ``Inhale: Enabling High-Performance and Energy-Efficient In-SRAM Cryptographic Hash for IoT." \textit{In Proc. of the 41th International Conference on Computer-Aided Design (ICCAD). San Diego, CA. 
-        \emph{[\href{https://jingyao-zhang.github.io/slides/ICCAD-Inhale.pdf}{slides}]
+        1. \textbf{Jingyao Zhang}. ``BP-NTT: Fast and Compact in-SRAM Number Theoretic Transform with Bit-Parallel Modular Multiplication." \textit{In Proc. of the 60th Design Automation Conference (DAC). San Francisco, CA. 
+        \emph{[\href{https://jingyao-zhang.github.io/slides/DAC-2023-Slides.pdf}{slides}]
+        [\href{https://www.youtube.com/watch?v=iCul63P_v2E}{video}]}
+        \hfill Jul 2023} \\ \vspace{3pt}
+
+        
+        2. \textbf{Jingyao Zhang}. ``Inhale: Enabling High-Performance and Energy-Efficient In-SRAM Cryptographic Hash for IoT." \textit{In Proc. of the 41th International Conference on Computer-Aided Design (ICCAD). San Diego, CA. 
+        \emph{[\href{https://jingyao-zhang.github.io/slides/ICCAD-2022-Slides.pdf}{slides}]
         [\href{https://www.youtube.com/watch?v=e3KeH8AqGks}{video}]}
         \hfill Nov 2022} \\ \vspace{3pt}
         
-        2. \textbf{Jingyao Zhang}. ``Sealer: In-SRAM AES for High-Performance and Low-Overhead Memory Encryption." \textit{In Proc. of the 22th International Symposium on Low Power Electronics and Design (ISLPED). Boston, MA.
-        \emph{[\href{https://jingyao-zhang.github.io/slides/ISLPED-slides-final-for-pdf.pdf}{slides}]
+        3. \textbf{Jingyao Zhang}. ``Sealer: In-SRAM AES for High-Performance and Low-Overhead Memory Encryption." \textit{In Proc. of the 22th International Symposium on Low Power Electronics and Design (ISLPED). Boston, MA.
+        \emph{[\href{https://jingyao-zhang.github.io/slides/ISLPED-2022-Slides.pdf}{slides}]
         [\href{https://www.youtube.com/watch?v=mBx0Q7_Zk8c}{video}]}
         \hfill Aug 2022} \\ \vspace{3pt}
         
         4. \textbf{Jingyao Zhang}. ``Hardware-Software Codesign of Weight Reshaping and Systolic Array Multiplexing for Efficient CNNs." \textit{In Proc. of the 24th Design, Automation and Test in Europe (DATE). Online.
-        \emph{[\href{https://jingyao-zhang.github.io/slides/date_2021_slides.pdf}{slides}]
+        \emph{[\href{https://jingyao-zhang.github.io/slides/DATE-2021-Slides.pdf}{slides}]
         [\href{https://www.youtube.com/watch?v=HiyUaztZrys}{video}]}
         \hfill Feb 2021}
     }}
@@ -313,11 +352,11 @@
 
 %----------- AWARDS & ACHIEVEMENTS -----------
 
-\section{Awards \& Achievements}
+\section{Awards}
   \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{DAC Young Fellowship}, Design Automation Conference (DAC)\hfill \textit{2023} \\ \vspace{3pt}
+        \textbf{DAC Young Fellowship}, Design Automation Conference\hfill \textit{2023} \\ \vspace{3pt}
     
         \textbf{Dean’s Distinguished Fellowship Award}, University of California, Riverside\hfill \textit{2021} \\ \vspace{3pt}
         
@@ -326,6 +365,18 @@
         \textbf{First-class Scholarship}, Xidian University (Top 14\% of 560+)\hfill \textit{2018, 2019} \\ \vspace{3pt}
         
         \textbf{Outstanding Student Award}, Xidian University\hfill \textit{2018, 2019} \\ \vspace{3pt}
+    }}
+  \resumeSubHeadingListEnd
+
+\section{Grants}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+
+        \textbf{Conference Travel Grant}, University of California, Riverside\hfill \textit{2023} \\ \vspace{3pt}
+
+        \textbf{Student Travel Grant}, gem5 Boot Camp\hfill \textit{2022} \\ \vspace{3pt}
+        
     }}
   \resumeSubHeadingListEnd
 
@@ -378,6 +429,20 @@
   \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
+        \textbf{\large Reviewed Papers:} {\large 2}\hfill \\ \vspace{3pt}
+    
+        \textbf{Journal Paper Review}, IEEE Computer Architecture Letters (CAL)\hfill \textit{Aug, Jun 2023} \\ \vspace{5pt}
+
+        \textbf{\large Evaluated Artifacts:} {\large 6}\hfill \\ \vspace{3pt}
+
+        \textbf{Artifact Evaluation Board}, Journal of Systems Research (JSys)\hfill \textit{2023} \\ \vspace{3pt}
+
+        \textbf{Artifact Evaluation Committee}, ACM Symposium on Operating Systems Principles (SOSP)\hfill \textit{2023} \\ \vspace{3pt}
+
+        \textbf{Artifact Evaluation Committee}, ACM International Conference On Mobile Computing And Networking (MobiCom)\hfill \textit{2023} \\ \vspace{3pt}
+
+        \textbf{Artifact Evaluation Committee}, Network and Distributed System Security Symposium (NDSS)\hfill \textit{2023} \\ \vspace{3pt}
+    
         \textbf{Artifact Evaluation Committee}, USENIX Annual Technical Conference (ATC)\hfill \textit{2023} \\ \vspace{3pt}
         
         \textbf{Artifact Evaluation Committee}, USENIX Symposium on Operating Systems Design and Implementation (OSDI)\hfill \textit{2023} \\ \vspace{3pt}
@@ -394,7 +459,7 @@
         
         \textbf{Technologies:}{ gem5, Sniper, HSpice, PyTorch, Xilinx Vivado, Omnet++} \\ \vspace{3pt}
         
-        \textbf{Languages:}{ Chinese (Native), English (Professional), Korean (Elementary)}
+        \textbf{Languages:}{ Chinese (Native), English (Professional)}
         
         % \textbf{Frameworks}{: X, X, X} \\
         % \textbf{Developer Tools}{: X, X, X} \\
