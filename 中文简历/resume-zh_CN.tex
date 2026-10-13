@@ -1,0 +1,281 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+\usepackage{enumitem}
+\definecolor{hypercolor}{HTML}{800000}
+\definecolor{date}{HTML}{666666}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=hypercolor,
+}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{张景尧}
+
+\basicInfo{
+  \faEnvelope \hspace{.5pt} \href{mailto:jzhan502@ucr.edu}{jzhan502@ucr.edu}
+    $|$
+    \faGraduationCap \hspace{.5pt} \href{https://scholar.google.com/citations?hl=en&user=KOUsUIwAAAAJ}{谷歌学术}
+    $|$
+    \faHome \hspace{.5pt} \href{https://jingyao-zhang.github.io/}{个人主页}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/jingyao-zhang}{GitHub}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/jingyaozhang/}{领英}
+    $|$
+    \faMapMarker \hspace{.5pt} \href{https://www.google.com/maps/place/University+of+California,+Riverside/@33.9737055,-117.3280644,15z/data=!4m6!3m5!1s0x80dcae4687aa9fb3:0x10050bdf47721d31!8m2!3d33.9737055!4d-117.3280644!16zL20vMDFoaHZn}{Riverside, USA}
+}
+\vspace{5pt}
+% \rule{\textwidth}{0.5pt}
+\vspace{-2pt}
+\centerline{研究兴趣：致力于提升\textbf{隐私保护系统}在\textbf{软件}和\textbf{硬件}层面的\textbf{性能}。}
+\vspace{-2pt}
+% \rule{\textwidth}{0.5pt}
+
+\section{教育背景}
+\datedsubsection{\textbf{加州大学河滨分校 (University of California, Riverside)}}{Riverside, USA}
+\textit{博士研究生}\ 计算机科学, GPA: 3.7/4.0 \hfill {2021年9月 - 至今} \\
+\textit{导师：\href{https://www.cs.ucr.edu/~elaheh/}{Elaheh Sadredini}}
+\datedsubsection{\textbf{西安电子科技大学 (Xidian University)}}{西安, 中国}
+\textit{硕士}\ 电子与通信工程, GPA: 3.7/4.0；优秀毕业论文奖
+\hfill {2018年9月 - 2021年6月} \\
+\textit{学士}\ 通信工程, GPA: 3.7/4.0；教改班 (前5\% / 800+)
+\hfill {2014年9月 - 2018年6月}
+
+\section{工作经历}
+\datedsubsection{\textbf{英伟达 (Nvidia), 数据中心服务器平台安全部门}}{\textit{Mentor: Lohith Rangappa}}
+\role{系统软件实习生（预计）\hfill}{2025年6月 - 2025年9月}
+\vspace{-8pt}
+\begin{itemize}
+  \item 开发用于将安全固件与第三方硬件集成的 \textbf{SDK}，支持安全特性快速对接与验证。
+  \item 设计并落地 \textbf{HAL（硬件抽象层）测试套件}，覆盖功能与健壮性用例，提升平台一致性与完整性验证效率。
+\end{itemize}
+
+\datedsubsection{\textbf{英伟达 (Nvidia), 数据中心服务器平台安全部门}}{\textit{Mentor: Lohith Rangappa}}
+\role{暑期实习生\hfill}{2024年6月 - 2024年9月}
+\vspace{-8pt}
+\begin{itemize}
+  \item 开发了BMC辅助证明功能，以支持基于SPDM的非PLDM设备远程证明。
+  \item 通过将密钥清单 (Key Manifest) 集成到外部信任根 (External Root of Trust)，为非PLDM设备实现了安全固件更新。
+\end{itemize}
+
+\datedsubsection{\textbf{阿里云，操作系统实验室}}{\textit{Mentor: 乾越（Yue Qian）}}
+\role{External Developer（外部开发者）\hfill}{2023年8月 - 2024年11月}
+\vspace{-8pt}
+\begin{itemize}
+    \item 开发 \textbf{安全 LLM 推理平台}，其 \textbf{可信网络网关（Trusted Network Gate）} 支持 HTTP/WebSocket。
+    \item 为 \textbf{CoCo KBS} 设计并实现 \textbf{Combined Attestation} 框架，支持 \textbf{GPU 证明}。\,[\href{https://github.com/jingyao-zhang/demo-combined-attestation}{repo}] [\href{https://www.youtube.com/watch?v=PUM6HVjNAm8}{demo}]
+    \item 研究 \textbf{nvTrust} 在英伟达机密计算中的验证与证明流程。
+    \item 调研 \textbf{Azure Confidential AI} 等支持 \textbf{GPU 机密计算} 的系统并对比分析。
+\end{itemize}
+
+\section{研究与开源项目}
+
+\datedsubsection{\textbf{中国科学院, 开源之夏}}{\textit{Mentor: 马丁 \& 张家乐}}
+\role{项目开发者\hfill}{2023年 \& 2024年}
+\vspace{-8pt}
+\begin{itemize}
+    \item 构建了\href{https://github.com/inclavare-containers/Confidential-AI}{Confidential-AI}框架，该框架基于\href{https://github.com/confidential-containers/guest-components/tree/main/attestation-agent}{Attestation Agent}、\href{https://github.com/confidential-containers/guest-components/tree/main/confidential-data-hub}{CDH}和可信网络网关(Trusted Network Gate) ，用于安全的AI工作流。
+    \item 开发了\href{https://github.com/inclavare-containers/tee-refvalue}{Tee-RefValue}工作流，该流程可在AMD SEV-SNP平台上自动为用户镜像、固件和内核生成参考度量值，并与\textit{机密容器}兼容。
+    \item 研究了AMD SEV-SNP平台上的证明过程，包括参考度量值的生成。
+    \item 评估了各大云服务提供商（如谷歌云和Azure）的证明工具。
+\end{itemize}
+
+
+\section{发表论文}
+\begin{enumerate}[label=\arabic*., itemsep=1pt, topsep=3pt]
+    \item \textbf{Jingyao Zhang}, and Elaheh Sadredini. ``No One-Size-Fits-All: A Workload-Driven Characterization of Bit-Parallel vs. Bit-Serial Data Layouts for Processing-using-Memory." \textit{In Submission.}
+
+    \item \textbf{Jingyao Zhang}, Jaewoo Park, Jongeun Lee, and Elaheh Sadredini. ``SAIL: SRAM-Accelerated LLM Inference System with Lookup-Table-based GEMV." \textit{In Submission.}
+
+    \item \textbf{Jingyao Zhang}, and Elaheh Sadredini. ``A Near-Cache Architectural Framework for Cryptographic Computing." \textit{In Submission.}
+
+    \item \textbf{Jingyao Zhang}, and Elaheh Sadredini. ``CryptoSRAM: Enabling High-Throughput Cryptography on MCUs via In-SRAM Computing." \textit{In Proc. of the 1st IEEE Cross-disciplinary Conference on Memory-Centric Computing (CCMCC). Oct 2025.}
+
+    \item Sahar Ghoflsaz, \textbf{Jingyao Zhang}, and Elaheh Sadredini. ``Enabling Low-Cost Secure Computing on Untrusted In-Memory Architectures." \textit{In Proc. of the 34th USENIX Security Symposium. Aug 2025.} (\textbf{\textit{CCF-A类}})
+
+    \item \textbf{Jingyao Zhang}, and Elaheh Sadredini. ``Unlocking Energy-Efficient and High-Throughput Secure Data Communication in IoT with Memory-Centric Computing." \textit{Poster at Proc. of the 39th International Parallel and Distributed Processing Symposium (IPDPS). Jun 2025.}
+
+    \item \textbf{Jingyao Zhang}, Mohsen Imani, and Elaheh Sadredini. ``\href{https://arxiv.org/pdf/2303.00173.pdf}{BP-NTT: Fast and Compact in-SRAM Number Theoretic Transform with Bit-Parallel Modular Multiplication}." \textit{In Proc. of the 60th Design Automation Conference (DAC). Jul 2023.} (\textbf{\textit{CCF-A类}})
+
+    \item \textbf{Jingyao Zhang}, and Elaheh Sadredini. ``\href{https://arxiv.org/pdf/2208.07570.pdf}{Inhale: Enabling High-Performance and Energy-Efficient In-SRAM Cryptographic Hash for IoT}." \textit{In Proc. of the 41th International Conference on Computer-Aided Design (ICCAD). Nov 2022.} (\textbf{\textit{CCF-B类}})
+
+    \item \textbf{Jingyao Zhang}, Hoda Naghibijouybari, and Elaheh Sadredini. ``\href{https://arxiv.org/pdf/2207.01298.pdf}{Sealer: In-SRAM AES for High-Performance and Low-Overhead Memory Encryption}." \textit{In Proc. of the 22th International Symposium on Low Power Electronics and Design (ISLPED). Aug 2022.} (\textbf{\textit{CCF-C类}})
+
+    \item \textbf{Jingyao Zhang}, Huaxi Gu, Li Zhang, Bing Li, and Ulf Schlichtmann. ``\href{https://drive.google.com/file/d/1vOt_0eP0xW03lu6KngMNexirfjsxyFDI/view}{Hardware-Software Codesign of Weight Reshaping and Systolic Array Multiplexing for Efficient CNNs}." \textit{In Proc. of the 24th Design, Automation and Test in Europe (DATE). Feb 2021.} (\textbf{\textit{CCF-B类}})
+\end{enumerate}
+
+
+\section{研究经历}
+\datedsubsection{\textbf{AREA Lab, 加州大学河滨分校}}{\textit{导师: Elaheh Sadredini}}
+\role{研究生助理研究员\hfill}{2021年9月 - 至今}
+\vspace{-8pt}
+\begin{itemize}
+    \item 正在设计一个专为存内计算 (PIM) 架构定制的可信执行环境 (TEE) 框架，其设计受sNPU等安全NPU启发；集成了轻量级的基于tile的权限检查、无需虚拟内存的SRAM级bank隔离以及感知NoC的安全数据路由，以最小的TCB实现安全执行并支持缓存行感知的内存映射。
+    \item 使用基于MLIR的Polyhedral模型和基于E-Graph的搜索，为领域特定加速器开发了一个通用编译器，特别针对涉及向量和标量内核以及混合精度的工作负载。
+    \item 为加速量化语言模型设计了一种片上解决方案，包括动态数据精度自适应和高效的运行时量化。
+    \item 开发了一个框架，将存内SRAM计算无缝集成到现有计算机系统中，以实现高效、安全的片上（前）后量子密码学处理。
+    \item 为在SRAM内高效、安全地计算NTT，开发了一种采用隐式移位技术的位并行模乘算法，在低开销SRAM阵列上优化了性能。
+    \item 利用行/通道级数据对齐，为AES/SHA-3算法的片上加速设计了一个安全的存内SRAM架构，实现了高能效、高吞吐量和高面积效率。
+\end{itemize}
+
+\datedsubsection{\textbf{先进网络技术实验室, 西安电子科技大学}}{\textit{导师: 顾华玺}}
+\role{硕士研究生\hfill}{2018年9月 - 2021年6月}
+\vspace{-8pt}
+\begin{itemize}
+    \item 开发了一种面向CNN的软硬协同设计框架，利用权重重塑和脉动阵列复用技术，并结合遗传算法优化硬件性能。
+    \item 构建了一个基于FPGA的分布式推理系统，采用HLS描述硬件，利用脉动阵列加速CNN，并通过Aurora/Ethernet协议进行板间通信。
+    \item 设计了一种灵活紧凑的N×N等离子体开关拓扑，并提出专用配置算法确保其可重构无阻塞，适用于管理数据中心的混合流量。
+    \item 为光片上网络中的Mesh网络设计了一种低损耗、紧凑的等离子体路由器，相比其他结构具有更低的插入损耗和更小的尺寸。
+\end{itemize}
+
+\section{教学经历}
+\datedsubsection{\textbf{CS 010C 数据结构与算法导论}}{\textit{Instructor: Patrick Miller}}
+\role{助教\hfill}{2024年春季}
+\vspace{-8pt}
+\begin{itemize}
+    \item 每周主持三次实验课，以辅助讲座和作业。
+    \item 每周设立办公时间以解答学生问题。
+\end{itemize}
+
+\datedsubsection{\textbf{CS 161 计算机系统设计与体系结构}}{\textit{Instructor: Elaheh Sadredini}}
+\role{助教\hfill}{2023年秋季, 2024年冬季}
+\vspace{-8pt}
+\begin{itemize}
+    \item 每周主持三次讨论课，以辅助讲座、作业和实验。
+    \item 每周设立办公时间以解答学生问题。
+\end{itemize}
+
+\datedsubsection{\textbf{CS 213 多核处理器架构和编程}}{\textit{Instructor: Elaheh Sadredini}}
+\role{助教\hfill}{2022年秋季}
+\vspace{-8pt}
+\begin{itemize}
+    \item 主持了两场学生报告的讨论会。
+    \item 每周设立办公时间以解答学生问题。
+    \item 批改了作业和编程项目。
+\end{itemize}
+
+\section{其他经历}
+\datedsubsection{\textbf{gem5 训练营}}{Davis, USA}
+\role{营员\hfill}{2022年7月}
+\vspace{-8pt}
+\begin{itemize}
+    \item 模拟并分析计算机架构性能，研究了不同工作负载和基准测试套件在各种计算机架构上的行为。
+    \item 评估了不同的设计选择（如变化的缓存大小或使用不同的互连拓扑）对系统性能的影响，并探索了不同微架构特性的效果。
+\end{itemize}
+
+\datedsubsection{\textbf{Xilinx 夏令营}}{线上}
+\role{营员 \& 队长\hfill}{2020年7月 - 2020年8月}
+\vspace{-8pt}
+\begin{itemize}
+    \item 开发了一种基于FPGA的分布式加速平台，母板通过以太网将文件发送到子板的监控文件夹，以触发程序执行。[\href{https://github.com/jingyao-zhang/XSC_Distributed_Platform_for_Acceleration}{代码}]
+\end{itemize}
+
+\datedsubsection{\textbf{微软创新中心}}{西安, 中国}
+\role{实习生\hfill}{2017年7月 - 2017年8月}
+\vspace{-8pt}
+\begin{itemize}
+    \item 探索了从早期的模拟系统到5G技术的蜂窝网络演进过程中的进步和挑战。
+\end{itemize}
+
+\section{学术报告}
+\begin{enumerate}[label=\arabic*., itemsep=1pt, topsep=3pt]
+    \item \textbf{Jingyao Zhang}. ``In-SRAM Computing for Cryptography." \textit{在计算所夏培肃论坛上报告. \emph{[\href{https://jingyao-zhang.github.io/slides/XiaPeisu.pdf}{slides}]}
+    \hfill Dec 2023} \vspace{-2pt}
+    
+    \item \textbf{Jingyao Zhang}. ``Combined Attestation." \textit{In Confidential Containers Community Meeting. \emph{[\href{https://docs.google.com/presentation/d/1EbxBZL8DJf4skoyJklNx00zee0HalzV3Y9R76WWISQE/edit?usp=sharing}{slides}]
+    [\href{https://zoom.us/rec/share/7yI2fIOceuSYvAtdZPwnzj6PYlGYJ3ABvOX5X8voL3tFHg6KREivf_V9Qp0ANTRI.-PtnE-Fj4pb8lN1Z}{video}]
+    [\href{https://www.youtube.com/watch?v=PUM6HVjNAm8}{demo}]}
+    \hfill Nov 2023} \vspace{-2pt}
+    
+    \item \textbf{Jingyao Zhang}. ``Safeguard Your Cloud Workloads: An In-depth Look at Confidential Computing." \textit{In Proc. of IEEE Inland Empire Data Science Workshop (IEDSW). \emph{[\href{https://sites.google.com/ucr.edu/ieee-inlandempire-dsw}{link}]}
+    \hfill Nov 2023} \vspace{-2pt}
+    
+    \item \textbf{Jingyao Zhang}. ``Safeguard Your Cloud Workloads and Then Accelerate: An In-depth Look at CPU and GPU Confidential Computing." \textit{受邀于字节跳动进行线上报告. \textbf{Live Attendance: $\sim$300}. \emph{[\href{https://jingyao-zhang.github.io/slides/ByteDance-Tech-Talk-Slides.pdf}{slides}] [\href{https://bytedance.feishu.cn/minutes/obcn35p3vg153yhg211a9jl8?from=auth_notice}{video}]}
+    \hfill Oct 2023} \vspace{-2pt}
+
+    \item \textbf{Jingyao Zhang}. ``BP-NTT: Fast and Compact in-SRAM Number Theoretic Transform with Bit-Parallel Modular Multiplication." \textit{In Proc. of the 60th Design Automation Conference (DAC). San Francisco, CA. 
+    \emph{[\href{https://jingyao-zhang.github.io/slides/DAC-2023-Slides.pdf}{slides}]
+    [\href{https://www.youtube.com/watch?v=iCul63P_v2E}{video}]}
+    \hfill Jul 2023} \vspace{-2pt}
+
+    \item \textbf{Jingyao Zhang}. ``Inhale: Enabling High-Performance and Energy-Efficient In-SRAM Cryptographic Hash for IoT." \textit{In Proc. of the 41th International Conference on Computer-Aided Design (ICCAD). San Diego, CA. 
+    \emph{[\href{https://jingyao-zhang.github.io/slides/ICCAD-2022-Slides.pdf}{slides}]
+    [\href{https://www.youtube.com/watch?v=e3KeH8AqGks}{video}]}
+    \hfill Nov 2022} \vspace{-2pt}
+
+    \item \textbf{Jingyao Zhang}. ``Sealer: In-SRAM AES for High-Performance and Low-Overhead Memory Encryption." \textit{In Proc. of the 22th International Symposium on Low Power Electronics and Design (ISLPED). Online.
+    \emph{[\href{https://jingyao-zhang.github.io/slides/ISLPED-2022-Slides.pdf}{slides}]
+    [\href{https://www.youtube.com/watch?v=mBx0Q7_Zk8c}{video}]}
+    \hfill Aug 2022} \vspace{-2pt}
+
+    \item \textbf{Jingyao Zhang}. ``Hardware-Software Codesign of Weight Reshaping and Systolic Array Multiplexing for Efficient CNNs." \textit{In Proc. of the 24th Design, Automation and Test in Europe (DATE). Online.
+    \emph{[\href{https://jingyao-zhang.github.io/slides/DATE-2021-Slides.pdf}{slides}]
+    [\href{https://www.youtube.com/watch?v=HiyUaztZrys}{video}]}
+    \hfill Feb 2021} \vspace{-2pt}
+\end{enumerate}
+
+\section{获奖情况}
+\datedline{\textit{Laxmi N. Bhuyan捐赠奖学金}, 加州大学河滨分校}{2025年}
+\datedline{\textit{DAC青年学者奖}, 设计自动化会议}{2023年}
+\datedline{\textit{院长杰出奖学金}, 加州大学河滨分校}{2021年}
+\datedline{\textit{优秀毕业论文奖}, 西安电子科技大学}{2021年}
+\datedline{\textit{一等奖学金}, 西安电子科技大学 (前14\% / 560+)}{2018年, 2019年}
+\datedline{\textit{优秀学生奖}, 西安电子科技大学}{2018年, 2019年}
+
+\section{所获经费}
+\datedline{\textbf{Conference Travel Grant}, University of California, Riverside}{2023}
+\datedline{\textbf{Student Travel Grant}, gem5 Boot Camp}{2022}
+
+\section{学术服务}
+\textbf{审稿论文:} {\large 16}篇
+\begin{itemize}[itemsep=1pt, topsep=2pt, leftmargin=*]
+    \item \textbf{期刊论文审稿:}
+        \begin{itemize}[label={}, leftmargin=1em, itemsep=0pt]
+            \item Elsevier Integration (1) \hfill \textit{2025}
+            \item IEEE Computer Architecture Letters (CAL) (13) \hfill \textit{2023, 2024, 2025}
+            \item IEEE Transactions on Dependable and Secure Computing (TDSC) (1) \hfill \textit{2024}
+        \end{itemize}
+    \item \textbf{会议论文审稿:}
+        \begin{itemize}[label={}, leftmargin=1em, itemsep=0pt]
+            \item IEEE International Conference on Communication (ICC) (1) \hfill \textit{2024}
+        \end{itemize}
+\end{itemize}
+\vspace{5pt}
+\textbf{成果评估:} {\large 17}项
+\begin{itemize}[itemsep=1pt, topsep=2pt, leftmargin=*]
+    \item \textbf{成果评估委员会 (期刊):}
+        \begin{itemize}[label={}, leftmargin=1em, itemsep=0pt]
+            \item Journal of Systems Research (JSys) (2) \hfill \textit{2023}
+        \end{itemize}
+    \item \textbf{成果评估委员会 (会议):}
+        \begin{itemize}[label={}, leftmargin=1em, itemsep=0pt]
+            \item IEEE International Symposium on High-Performance Computer Architecture (HPCA) (1) \hfill \textit{2024}
+            \item USENIX Security Symposium (2) \hfill \textit{2024}
+            \item ACM European Conference on Computer Systems (EuroSys) (3) \hfill \textit{2024}
+            \item Annual Network and Distributed System Security Symposium (NDSS) (2) \hfill \textit{2024}
+            \item ACM Symposium on Operating Systems Principles (SOSP) (2) \hfill \textit{2023}
+            \item ACM Conference on Computer and Communications Security (CCS) (1) \hfill \textit{2023}
+            \item ACM International Conference On Mobile Computing And Networking (MobiCom) (1) \hfill \textit{2023}
+            \item USENIX Annual Technical Conference (ATC) (1) \hfill \textit{2023}
+            \item USENIX Symposium on Operating Systems Design and Implementation (OSDI) (2) \hfill \textit{2023, 2024}
+        \end{itemize}
+\end{itemize}
+
+\section{技能}
+\begin{itemize}[parsep=0.5ex]
+    \item \textbf{编程语言:} C, C++, Python, Verilog, Rust, MLIR
+    \item \textbf{技术工具:} Gem5, Sniper, HSpice, PyTorch, LLVM
+    \item \textbf{语言:} 中文 (母语), 英文 (专业)
+\end{itemize}
+
+\end{document}
