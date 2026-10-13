@@ -204,14 +204,27 @@
   \vspace{3pt}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Data Center Server Platform Security, Nvidia}{\textit{Mentor: Lohith Rangappa}}
-      {Summer Intern}{Jun 2024 \textbf{--} Sep 2024}
+      {Data Center Server Platform Security, Nvidia Corporation}{\textit{Mentor: Lohith Rangappa}}
+      {System Software Intern}{Jun 2025 \textbf{--} Sep 2025 (exp.)}
+        \resumeItemListStart
+            \resumeItem{Developed a Software Development Kit (SDK) to enable the integration of security firmware with third-party hardware.}
+\resumeItem{Designed a test suite to validate new HAL (Hardware Abstraction Layer) implementations and ensure system integrity.}
+        \resumeItemListEnd
+        
+    \resumeSubheading
+      {Data Center Server Platform Security, Nvidia Corporation}{\textit{Mentor: Lohith Rangappa}}
+      {System Software Intern}{Jun 2024 \textbf{--} Sep 2024}
         \resumeItemListStart
             \resumeItem{Developed BMC-assisted attestation to support SPDM-based remote attestation for non-PLDM devices.}
             \resumeItem{Enabled secure firmware update for non-PLDM devices by integrating Key Manifest into External Root of Trust.}
         \resumeItemListEnd
-   
-    \resumeSubheading
+  \resumeSubHeadingListEnd
+
+\section{Research \& Open Source Projects}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+        \resumeSubheading
       {Operating System Lab, Alibaba Cloud}{\textit{Mentor: Yue Qian}}
       {External Developer}{Aug 2023 \textbf{--} Nov 2024}
         \resumeItemListStart
@@ -236,35 +249,62 @@
     
   \resumeSubHeadingListEnd
 
+% \section{Research \& Open Source Projects}
+%   \vspace{3pt}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {Operating System Lab, Alibaba Cloud}{\textit{Mentor: Yue Qian}}
+%       {External Developer}{Aug 2023 \textbf{--} Nov 2024}
+%         \resumeItemListStart
+%             % \resumeItem{Currently building a system for large-scale cloud deployment that provides GPU confidential computing.}
+%             \resumeItem{Developed a secure LLM inference platform with Trusted Network Gate supporting HTTP/WebSocket.}
+%             \resumeItem{Designed and developed a \textit{Combined Attestation} framework for \textit{CoCo KBS} to support GPU attestation. [\href{https://github.com/jingyao-zhang/demo-combined-attestation}{repo}]
+%             [\href{https://www.youtube.com/watch?v=PUM6HVjNAm8}{demo}]}
+%             \resumeItem{Conducted research on the \textit{nvTrust} for Nvidia confidential computing, including verification and attestation.}
+%             \resumeItem{Investigated existing systems that support GPU confidential computing, such as \textit{Azure Confidential AI}.}
+%         \resumeItemListEnd
+    
+%     \resumeSubheading
+%       {Open Source Promotion Plan, Chinese Academy of Sciences}{\textit{Mentor: Ding Ma \& Jiale Zhang }}
+%       {Project Developer}{2023 \& 2024}
+%         \resumeItemListStart
+%             \resumeItem{Built \href{https://github.com/inclavare-containers/Confidential-AI}{Confidential-AI}, a framework based on \href{https://github.com/confidential-containers/guest-components/tree/main/attestation-agent}{Attestation Agent}, \href{https://github.com/confidential-containers/guest-components/tree/main/confidential-data-hub}{CDH}, and Trusted Network Gate for secure AI workflows.}
+%             % \resumeItem{\href{https://github.com/confidential-containers/guest-components/tree/main/attestation-agent}{Attestation Agent}, \href{https://github.com/confidential-containers/guest-components/tree/main/confidential-data-hub}{CDH}, Trusted Network Gate are utilized to provide agile attestation and secure data retrieval.}
+%             \resumeItem{Developed \href{https://github.com/inclavare-containers/tee-refvalue}{Tee-RefValue}, a workflow that automatically generates reference measurements for user image, firmware, and kernel on the AMD SEV-SNP platform, compatible with \textit{Confidential Containers}.}
+%             \resumeItem{Examined the attestation process on the AMD SEV-SNP platform, including the generation of reference measurement.}
+%             \resumeItem{Evaluated attestation tools across various cloud service providers, such as Google Cloud Platform and Azure.}
+%         \resumeItemListEnd
+    
+%   \resumeSubHeadingListEnd
+
 
 %----------- Publication -----------
 \section{Publications}
   \vspace{2pt}
-  \resumeSubHeadingListStart
-    \small{\item{
-        1. \textbf{Jingyao Zhang}, Jaewoo Park, Jongeun Lee and Elaheh Sadredini. ``SAIL: SRAM-Accelerated LLM Inference System with Lookup-Table-based GEMV." \textit{In Submission.} 
-        \\ \vspace{3pt}
-                
-    
-        2. \textbf{Jingyao Zhang}, and Elaheh Sadredini. ``A Near-Cache Architectural Framework for Cryptographic Computing." \textit{In Submission.} 
-        \\ \vspace{3pt}
-    
-        3. \textbf{Jingyao Zhang}, and Elaheh Sadredini. ``Unlocking Energy-Efficient and High-Throughput Secure Data Communication in IoT with Memory-Centric Computing." \textit{In Submission.} 
-        \\ \vspace{3pt}
+   \begin{enumerate}[leftmargin=*, labelindent=12pt, label=\arabic*., topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=3pt]
+    \small
+        \item \textbf{Jingyao Zhang}, Jaewoo Park, Jongeun Lee and Elaheh Sadredini. ``SAIL: SRAM-Accelerated LLM Inference System with Lookup-Table-based GEMV." \textit{In Submission.} 
+                        
+        \item \textbf{Jingyao Zhang}, and Elaheh Sadredini. ``A Near-Cache Architectural Framework for Cryptographic Computing." \textit{In Submission.} 
 
-        4. Sahar Ghoflsaz, \textbf{Jingyao Zhang}, and Elaheh Sadredini. ``Enabling Low-Cost Secure Computing on Untrusted In-Memory Architectures" \textit{In Proc. of the 34th USENIX Security Symposium. August 2025.} 
-        \\ \vspace{3pt}
+        \item \textbf{Jingyao Zhang}, and Elaheh Sadredini. ``No One-Size-Fits-All: A Workload-Driven Characterization of Bit-Parallel vs. Bit-Serial Data Layouts for Processing-using-Memory." \textit{Poster at Proc. of the IEEE International Symposium on Workload Characterization. Oct 2025.}
+
+        \item \textbf{Jingyao Zhang}, and Elaheh Sadredini. ``CryptoSRAM: Enabling High-Throughput Cryptography on MCUs via In-SRAM Computing." 
+        \textit{In Proc. of the 1st IEEE Cross-disciplinary Conference on Memory-Centric Computing (CCMCC). October 2025.} 
+
+        \item Sahar Ghoflsaz, \textbf{Jingyao Zhang}, and Elaheh Sadredini. ``\href{https://arxiv.org/abs/2501.17292}{Enabling Low-Cost Secure Computing on Untrusted In-Memory Architectures}." \textit{In Proc. of the 34th USENIX Security Symposium. August 2025.} 
     
-        5. \textbf{Jingyao Zhang}, Mohsen Imani, and Elaheh Sadredini. ``\href{https://arxiv.org/pdf/2303.00173.pdf}{BP-NTT: Fast and Compact in-SRAM Number Theoretic Transform with Bit-Parallel Modular Multiplication}." \textit{In Proc. of the 60th Design Automation Conference (DAC). July 2023.} 
-        \\ \vspace{3pt}
+        \item \textbf{Jingyao Zhang}, and Elaheh Sadredini. ``\href{https://ieeexplore.ieee.org/document/11105798}{Unlocking Energy-Efficient and High-Throughput Secure Data Communication in IoT with Memory-Centric Computing}." 
+        \textit{Poster at Proc. of the 39th International Parallel and Distributed Processing Symposium (IPDPS). June 2025.} 
         
-        6. \textbf{Jingyao Zhang}, and Elaheh Sadredini. ``\href{https://arxiv.org/pdf/2208.07570.pdf}{Inhale: Enabling High-Performance and Energy-Efficient In-SRAM Cryptographic Hash for IoT}." \textit{In Proc. of the 41th International Conference on Computer-Aided Design (ICCAD). November 2022.}  \\ \vspace{3pt}
+        \item \textbf{Jingyao Zhang}, Mohsen Imani, and Elaheh Sadredini. ``\href{https://arxiv.org/pdf/2303.00173.pdf}{BP-NTT: Fast and Compact in-SRAM Number Theoretic Transform with Bit-Parallel Modular Multiplication}." \textit{In Proc. of the 60th Design Automation Conference (DAC). July 2023.} 
         
-        7. \textbf{Jingyao Zhang}, Hoda Naghibijouybari, and Elaheh Sadredini. ``\href{https://arxiv.org/pdf/2207.01298.pdf}{Sealer: In-SRAM AES for High-Performance and Low-Overhead Memory Encryption}." \textit{In Proc. of the 22th International Symposium on Low Power Electronics and Design (ISLPED). August 2022.}  \\ \vspace{3pt}
+        \item \textbf{Jingyao Zhang}, and Elaheh Sadredini. ``\href{https://arxiv.org/pdf/2208.07570.pdf}{Inhale: Enabling High-Performance and Energy-Efficient In-SRAM Cryptographic Hash for IoT}." \textit{In Proc. of the 41th International Conference on Computer-Aided Design (ICCAD). November 2022.}
         
-        8. \textbf{Jingyao Zhang}, Huaxi Gu, Li Zhang, Bing Li, and Ulf Schlichtmann. ``\href{https://drive.google.com/file/d/1vOt_0eP0xW03lu6KngMNexirfjsxyFDI/view}{Hardware-Software Codesign of Weight Reshaping and Systolic Array Multiplexing for Efficient CNNs}." \textit{In Proc. of the 24th Design, Automation and Test in Europe (DATE). February 2021.} 
-    }}
-  \resumeSubHeadingListEnd
+        \item \textbf{Jingyao Zhang}, Hoda Naghibijouybari, and Elaheh Sadredini. ``\href{https://arxiv.org/pdf/2207.01298.pdf}{Sealer: In-SRAM AES for High-Performance and Low-Overhead Memory Encryption}." \textit{In Proc. of the 22th International Symposium on Low Power Electronics and Design (ISLPED). August 2022.}
+        
+        \item \textbf{Jingyao Zhang}, Huaxi Gu, Li Zhang, Bing Li, and Ulf Schlichtmann. ``\href{https://drive.google.com/file/d/1vOt_0eP0xW03lu6KngMNexirfjsxyFDI/view}{Hardware-Software Codesign of Weight Reshaping and Systolic Array Multiplexing for Efficient CNNs}." \textit{In Proc. of the 24th Design, Automation and Test in Europe (DATE). February 2021.} 
+  \end{enumerate}
 
 %----------- RESEARCH EXPERIENCE -----------
 
@@ -277,7 +317,7 @@
       {Graduate Research Assistant}{Sep 2021 \textbf{--} Present}
         \resumeItemListStart
             \resumeItem{Currently designing a TEE framework tailored for Processing-In-Memory (PIM) architectures, inspired by secure NPU designs such as sNPU; integrated lightweight tile-based permission checking, SRAM-level bank isolation without virtual memory, and NoC-aware secure data routing, enabling secure execution with minimal TCB and support for cache-line aware memory mapping.}
-            \resumeItem{Developed a general-purpose compiler for domain-specific accelerators using MLIR and E-Graph-based searching, specifically targeting workloads that involve vector and scalar kernels as well as mixed-precision workloads.}
+            \resumeItem{Developed a general-purpose compiler for domain-specific accelerators using MLIR-based Polyhedral model and E-Graph-based searching, specifically targeting workloads that involve vector and scalar kernels as well as mixed-precision workloads.}
             % \resumeItem{Currently developing a general-purpose compiler for domain-specific accelerators over MLIR and E-Graph-based searching, specifically targeting workloads that involve fine-grained interleaving of vector and scalar kernels as well as mixed-precision workloads.}
             \resumeItem{Designed an on-chip solution for accelerating quantized language models, including dynamic data precision adaptation and efficient runtime de-/quantization.}
             % \resumeItem{Currently designing a secure and efficient mechanism to extend existing trusted execution environment for heterogeneous computing (e.g., GPUs, near-memory accelerators).}
@@ -368,10 +408,9 @@
   \resumeSubHeadingListEnd
 
 \section{Talks}
-  \vspace{2pt}
-  \resumeSubHeadingListStart
-    \small{\item{
-        \begin{enumerate}
+\vspace{2pt}
+   \begin{enumerate}[leftmargin=*, labelindent=12pt, label=\arabic*., topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=3pt]
+    \small
         \item \textbf{Jingyao Zhang}. ``In-SRAM Computing for Cryptography." \textit{In Xia Peisu Forum hosted by ICT. \emph{[\href{https://jingyao-zhang.github.io/slides/XiaPeisu.pdf}{slides}]}
         \hfill Dec 2023} \vspace{-2pt}
         
@@ -426,8 +465,7 @@
         % \emph{[\href{https://jingyao-zhang.github.io/slides/DATE-2021-Slides.pdf}{slides}]
         % [\href{https://www.youtube.com/watch?v=HiyUaztZrys}{video}]}
         % \hfill Feb 2021}
-    }}
-  \resumeSubHeadingListEnd
+    % }}
 
 %----------- AWARDS & ACHIEVEMENTS -----------
 
@@ -435,6 +473,8 @@
   \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
+        \textbf{Laxmi N. Bhuyan Endowed Fellowship}, University of California, Riverside\hfill \textit{2025} \\ \vspace{3pt}
+    
         \textbf{DAC Young Fellowship}, Design Automation Conference\hfill \textit{2023} \\ \vspace{3pt}
     
         \textbf{Dean’s Distinguished Fellowship Award}, University of California, Riverside\hfill \textit{2021} \\ \vspace{3pt}
